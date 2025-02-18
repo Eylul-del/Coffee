@@ -10,7 +10,6 @@ header{
     opacity: 0.99;
     height: 800px;
     margin: 0;
-    z-index: -1;
     font-size: 25px;
 }
 
@@ -50,7 +49,6 @@ header ul a:hover{
 }
 
 header .entro{
-    /* font-size: 40px; */
     line-height: 40px;
     text-align: center;
     align-items:center;
@@ -362,7 +360,6 @@ header .entro .entroHeaderOne{
 
 .allClinets .clients{
     width: 450px;
-    /* display: flex; */
     align-items: center;
     gap: 30px;
 }
