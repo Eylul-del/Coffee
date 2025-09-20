@@ -185,7 +185,7 @@ header .entro .entroHeaderOne{
 .specialOffer{
     height: 500px;
     width: 100%;
-    background-image: url(/img/bg.jpg);
+    background-image: url(img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.99;
@@ -268,7 +268,7 @@ header .entro .entroHeaderOne{
 }
 
 .onlineReservation{
-    background-image: url(/img/bg.jpg);
+    background-image: url(img/bg.jpg);
     opacity: 0.99;
     position:relative;
     width: 1100px;
@@ -387,7 +387,7 @@ header .entro .entroHeaderOne{
 }
 
 footer{
-    background-image: url(/img/bg.jpg);
+    background-image: url(img/bg.jpg);
     height: 500px;
     font-size: 20px;
     position:relative;
