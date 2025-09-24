@@ -1,0 +1,151 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/pages.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <title>KOPPEE Shop Template</title>
+</head>
+<body>
+
+    <header>
+        <div class="all">
+            <nav>
+                <div class="logo">
+                    <h1>KOPPEE</h1>
+                </div>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="service.html"><li>Service</li></a>
+                <a href="menu.html"><li>Menu</li></a>
+                <a href="reservation.html"><li>Reservation</li></a>
+                <a href="contact.html"><li class="home">Contact</li></a>
+            </ul>
+            <div class="navList" onclick="showNavList()">
+                <img src="./img/sidebar.png" alt="nav list">
+            </div>
+            </nav>
+
+            
+
+        <div class="sideBar" id="sideBar">
+            <div class="hideBar" onclick="hideBar()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="service.html"><li>Service</li></a>
+                <a href="menu.html"><li>Menu</li></a>
+                <a href="reservation.html"><li>Reservation</li></a>
+                <a href="contact.html"><li class="home">Contact</li></a>
+            </ul>
+        </div>
+    
+            <div class="entro">
+                <h2>CONTACT</h2>
+                <h4>Home / Contact</h4>
+            </div>
+        </div>
+    </header>
+
+    <div class="break">
+        <img src="img/overlay-bottom.png" alt="overlay-bottom">
+    </div>    
+
+    
+    <div class="backToTop">
+        <button><i class="fa-solid fa-angles-up"></i></button>
+    </div>
+    <section class="contact">
+        <div class="contactHeader">
+            <div class="line"></div>
+            <h3>CONTACT US</h3>
+            <h2>Feel Free To Contact</h2>
+        </div>
+       <div class="contactContent">
+        <div class="contactAddreses">
+            <div class="address">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Adress</h3>
+                <p>123 Street, New York, USA</p>
+            </div>
+            <div class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+012 345 67890</p>
+            </div>
+            <div class="email">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+                <p>info@example.com</p>
+            </div>
+        </div>
+        <div class="contactContainer">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24151.040967235566!2d-74.0060155!3d40.7127281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0x8d1d8d8b3a2b6c3!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sus!4v1634567890123!5m2!1sen!2sus" frameborder="0"></iframe>
+            </div>
+
+            <div class="contactform">
+                <form>
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <input type="text" placeholder="Subject">
+                    <textarea rows="5" placeholder="Message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+       </div>
+    </section>
+    
+    <footer>
+       <div class="footeContent">
+        <div class="innerContent">
+            <div class="footerOne">
+                <h2>GET IN TOUCH</h2>
+                <p><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</p>
+                <p><i class="fa-solid fa-phone"></i> +012 345 67890</p>
+                <p><i class="fa-solid fa-envelope"></i> info@example.com</p>
+            </div>
+            <div class="footerTwo">
+                <h2>FOLLOW US</h2>
+                <p>Amet elitr vero magna sed <br> ipsum sit kasd sea <br> elitr lorem rebum</p>
+                <div class="icons">
+                    <i class="fa-brands fa-twitter"></i> 
+                    <i class="fa-brands fa-facebook"></i> 
+                    <i class="fa-brands fa-linkedin"></i>
+                     <i class="fa-brands fa-instagram"></i>
+
+                </div>
+            </div>
+            <div class="footerThree">
+                <h2>OPEN HOURS</h2>
+                <p>Monday - Friday</p>
+                <p>8.00 AM - 8.00 PM</p>
+                <p>Saturday - Sunday</p>
+                <p>2.00 PM - 8.00 PM</p>
+            </div>
+            <div class="footerFour">
+                <h2>NEWSLETTER</h2>
+                <p>Amet ekiter vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+                <div class="signUp">
+                    <input type="email" placeholder="Your Email"> <br>
+                    <button>Sign Up</button>
+                </div>
+            </div>
+           </div>
+            <hr>
+            <div class="footerRights">
+                <p>Copyright © <a href="#">Domain</a>. All Rights Reserved.</p>
+                <p>Designed by <a href="#">HTML Codex</a></p>
+            </div>
+       </div>
+    </footer> 
+    <script src="js.js"></script>
+</body>
+</html>

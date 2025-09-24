@@ -1,3 +1,13 @@
+window.showNavList = function () {
+  let sidebar = document.querySelector(".sideBar");
+  if (sidebar) sidebar.classList.add("show");
+};
+
+window.hideBar = function () {
+  let sidebar = document.querySelector(".sideBar");
+  if (sidebar) sidebar.classList.remove("show");
+};
+
 
 
 

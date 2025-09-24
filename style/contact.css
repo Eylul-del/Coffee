@@ -1,0 +1,133 @@
+:root{
+    --mainCoral: #DA9F5B; 
+    --pGray: #555;
+}
+
+
+header{
+    margin-top: -20px !important;
+}
+
+.contactAddreses{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+}
+
+:is(.address, .phone, .email){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 120px;
+    padding: 0;
+}
+
+:is(.address i, .phone i, .email i){
+    color: var(--mainCoral);
+    font-size: 30px;
+    margin-bottom: -15px;
+}
+
+.contactAddreses h3{
+    font-size: 30px;
+    margin-bottom: -15px;
+    line-height: 20px;
+}
+
+.contactAddreses p{
+    font-size: 16px;
+    color: var(--pGray);
+    margin-top: 30px;
+}
+
+.contactContainer{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 70px auto;
+}
+
+.contactContainer .map{
+    width: 540px;
+    height: 440px;
+}
+
+iframe{
+    width: inherit;
+    height: inherit;
+}
+
+.contactform{
+    width: 65%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 29px;
+}
+
+form *{
+    padding: 17px;
+    width: 100%;
+    display: block;
+    border: 1px solid rgba(161, 161, 161, 0.555);
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: rgb(161, 161, 161);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form button{
+    width: 40%;
+    color: black;
+    background-color: var(--mainCoral);
+    font-size: 18px;
+}
+
+@media (max-width: 420px) {
+    .contactAddreses{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contactAddreses i{
+        font-size: 28px;
+    }
+
+    .contactAddreses h3{
+        font-size: 25px;
+    }
+
+    .contactContainer{
+        flex-direction: column;
+        width: 90% !important;
+        margin: 40px auto;
+    }
+
+    .contactContainer .map{
+        width: 100%;
+        height: 350px;
+    }
+
+    .contactContainer .contactform{
+        margin-top: 30px;
+        width: 100%;
+        gap: 0px !important;
+    }
+
+    form input{
+        padding: 20px;
+    }
+
+    form button{
+        width: 100%;
+    }
+}
