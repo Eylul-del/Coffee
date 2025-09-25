@@ -584,10 +584,9 @@ footer .footerRights a{
     text-decoration: none;
     color: var(--mainCoral);
 }
-
-@media (min-width:370px) and (max-width:420px) {
-    body{
-        min-width:370px; 
+/* 
+@media (max-width:420px) {
+    body{ 
         max-width: 420px;
         overflow-x: hidden !important;
     }
@@ -595,7 +594,6 @@ footer .footerRights a{
         background-position: left top 70px;
         background-size: 430px 240px;
         background-repeat: no-repeat;
-        min-width:370px;
         max-width: 100% !important;
         height: 300px;
         padding: 0;
@@ -606,7 +604,6 @@ footer .footerRights a{
         justify-content:left !important;
         padding: 0 !important;
         height: 75px;
-        min-width:370px;
         max-width: 100% !important;
         overflow: hidden;        
         background-color: #33211D;
@@ -649,7 +646,6 @@ footer .footerRights a{
   .sideBar {
         display: block;
         height: 100vh;
-        min-width:370px;
         max-width: 300px;
         position: fixed;
         top: 0;
@@ -701,7 +697,6 @@ footer .footerRights a{
     }
 
     .aboutUs{
-        min-width:370px;
         max-width: 420px !important;
         padding: 0;
         display: flex;
@@ -719,7 +714,6 @@ footer .footerRights a{
     }
 
     .aboutUsContent{
-        min-width:370px;
         max-width: 90%;
         flex-direction: column;
         align-items: center !important;
@@ -730,7 +724,6 @@ footer .footerRights a{
 
     .aboutUsContent .ourStory,
     .aboutUsContent .ourVision{
-        min-width:370px;
         max-width: 100% !important;
         height: fit-content;
     }
@@ -743,12 +736,10 @@ footer .footerRights a{
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width:370px;
         max-width: 100%;
     }
 
     .aboutUsContent .aboutImg img{
-        min-width:370px;
         max-width: 100%;
         height: fit-content;
     }
@@ -768,7 +759,6 @@ footer .footerRights a{
     }
 
     .service{
-        min-width:370px;
         max-width: 400px;
         height: fit-content;
         flex-direction: column;
@@ -779,12 +769,10 @@ footer .footerRights a{
     .service img{
         margin: 0;
         height: 350px;
-        min-width:370px;
         max-width: 350px;
     }
 
     .service div{
-        min-width:370px;
         max-width: 350px;
     }
 
@@ -817,7 +805,6 @@ footer .footerRights a{
     .signUp{
         margin-top: 0px;
         padding: 0;
-        min-width:370px;
         max-width: 350px;
         overflow: hidden;
     }
@@ -829,7 +816,6 @@ footer .footerRights a{
     }
 
     .signUp button{
-        min-width:370px;
         max-width: 150px;
         font-size: 16px;
     }
@@ -838,7 +824,6 @@ footer .footerRights a{
         display: flex;
         flex-direction: column;
         align-items: center;
-        min-width:370px;
         max-width: 420px;
     }
 
@@ -853,7 +838,6 @@ footer .footerRights a{
 
     .hotAndCold{
         margin: 0;
-        min-width:370px;
         max-width: 100%;
         flex-wrap: wrap;
         justify-content: center;
@@ -867,7 +851,6 @@ footer .footerRights a{
         display: flex;
         align-items: center;
         margin: 0px auto;
-        min-width:370px;
         max-width: 90% !important;
     }
     
@@ -876,7 +859,6 @@ footer .footerRights a{
     }
 
     .hotInner .pricingImg img{
-        min-width:370px;
         max-width: 100px;
         height: 100px;
     }
@@ -887,20 +869,17 @@ footer .footerRights a{
         margin: 0px auto;
         flex-wrap: wrap;
         height: 1200px;
-        min-width:370px;
         max-width: 380px ;
     }
 
     .smallBreak,
     .smallBreak img{
-        min-width:370px;
         max-width: inherit !important;
     }
 
     .bookYourTable{
         box-sizing: border-box;
         padding: 20px 10px;
-        min-width:370px;
         max-width: 100% !important;
         background-color: rgb(35, 14, 10);
     }
@@ -963,14 +942,12 @@ footer .footerRights a{
     }
 
     :is(.footerTwo, .footerThree, .footerFour){
-        min-width:370px;
         max-width: 90% !important;    
         margin-top: -150px;
     }
 
     .footerOne{
         margin-top: -70px;
-        min-width:370px;
         max-width: 90% !important;
     }
 
@@ -989,7 +966,6 @@ footer .footerRights a{
     }
 
     .footerFour .signUp{
-        min-width:370px;
         max-width: 100%;
     }
 
@@ -1004,5 +980,202 @@ footer .footerRights a{
         height: 70px;
         box-sizing: border-box;
         line-height: 5px !important;
+    }
+} */
+
+
+@media (max-width:420px) {
+    body { 
+        max-width: 100%;
+        overflow-x: hidden !important;
+    }
+
+    header {
+        background-position: left top 70px;
+        background-size: cover; /* instead of fixed 430px */
+        background-repeat: no-repeat;
+        width: 100% !important;
+        height: 300px;
+        padding: 0;
+    }    
+
+    nav {
+        display: flex;
+        justify-content: left !important;
+        padding: 0 !important;
+        height: 75px;
+        width: 100% !important;
+        overflow: hidden;        
+        background-color: #33211D;
+    }
+
+    header nav ul {
+        display: none;
+    }
+    
+    header .logo {
+        margin-left: 20px;
+        text-align: left;
+        font-size: 19px;
+    }
+
+    .navList,
+    .navList img {
+        display: inline;
+        background-color: #ffdebc;
+        height: 45px;
+        width: 45px;
+        border-radius: 15px;
+    }
+
+    .navList {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .sideBar {
+        display: block;
+        height: 100vh;
+        width: 80%; /* flexible */
+        max-width: 300px;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        opacity: 0;
+        background-color: black;
+        transition: all 0.3s ease-in-out;
+        pointer-events: none;
+    }
+
+    .sideBar.show {
+        right: 0;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .entro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        padding: 0 !important;
+        margin-top: 0 !important;
+        height: auto;
+    }
+
+    header .entro h1 {
+        font-size: 40px; /* smaller for mobile */
+        margin: 0;
+    }
+
+    .entro h2 {
+        font-size: 18px;
+    }
+
+    .entro h3 {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .aboutUs {
+        width: 100% !important;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutUsContent {
+        width: 90%;
+        flex-direction: column;
+        align-items: center !important;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .aboutUsContent .aboutImg img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .service {
+        width: 100%;
+        max-width: 350px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .service img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .specialOffer {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .signUp {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .pricing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hotInner {
+        max-width: 90% !important;
+        margin: 0 auto;
+    }
+
+    .hotInner .pricingImg img {
+        max-width: 80px;
+        height: auto;
+    }
+
+    .onlineReservation,
+    .inner {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .bookYourTable {
+        width: 100% !important;
+        padding: 20px 10px;
+        background-color: rgb(35, 14, 10);
+    }
+
+    .footerOne,
+    .footerTwo,
+    .footerThree,
+    .footerFour {
+        max-width: 90% !important;
+        margin: 20px auto;
+    }
+
+    footer {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .footerRights {
+        flex-direction: column;
+        text-align: center;
+        line-height: 1.4;
+        padding: 10px;
     }
 }
