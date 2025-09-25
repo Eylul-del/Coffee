@@ -1,6 +1,7 @@
 :root{
     --mainCoral: #DA9F5B; 
     --pGray: #555;
+    --mainBgc: rgb(255, 251,242);
 }
 
 body{
@@ -586,14 +587,16 @@ footer .footerRights a{
 
 @media (min-width:350px) and (max-width:420px) {
     body{
-        width: 420px;
+        min-width:370px; 
+        max-width: 420px;
         overflow-x: hidden !important;
     }
     header{
         background-position: left top 70px;
         background-size: 430px 240px;
         background-repeat: no-repeat;
-        width: 100% !important;
+        min-width:370px;
+        max-width: 100% !important;
         height: 300px;
         padding: 0;
     }    
@@ -603,7 +606,8 @@ footer .footerRights a{
         justify-content:left !important;
         padding: 0 !important;
         height: 75px;
-        width: 100% !important;
+        min-width:370px;
+        max-width: 100% !important;
         overflow: hidden;        
         background-color: #33211D;
     }
@@ -623,7 +627,7 @@ footer .footerRights a{
         display: inline;
         background-color: #ffdebc;
         height: 45px;
-        width: 45px;
+        max-width: 45px;
         border-radius: 15px;
         z-index: 2147483647 !important;
     }
@@ -645,7 +649,8 @@ footer .footerRights a{
   .sideBar {
         display: block;
         height: 100vh;
-        width: 300px;
+        min-width:370px;
+        max-width: 300px;
         position: fixed;
         top: 0;
         right: -300px;
@@ -696,7 +701,8 @@ footer .footerRights a{
     }
 
     .aboutUs{
-        width: 420px !important;
+        min-width:370px;
+        max-width: 420px !important;
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -713,7 +719,8 @@ footer .footerRights a{
     }
 
     .aboutUsContent{
-        width: 90%;
+        min-width:370px;
+        max-width: 90%;
         flex-direction: column;
         align-items: center !important;
         gap: 20px;
@@ -723,7 +730,8 @@ footer .footerRights a{
 
     .aboutUsContent .ourStory,
     .aboutUsContent .ourVision{
-        width: 100% !important;
+        min-width:370px;
+        max-width: 100% !important;
         height: fit-content;
     }
 
@@ -735,11 +743,13 @@ footer .footerRights a{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        min-width:370px;
+        max-width: 100%;
     }
 
     .aboutUsContent .aboutImg img{
-        width: 100%;
+        min-width:370px;
+        max-width: 100%;
         height: fit-content;
     }
 
@@ -758,7 +768,8 @@ footer .footerRights a{
     }
 
     .service{
-        width: 400px;
+        min-width:370px;
+        max-width: 400px;
         height: fit-content;
         flex-direction: column;
         align-items: center;
@@ -768,11 +779,13 @@ footer .footerRights a{
     .service img{
         margin: 0;
         height: 350px;
-        width: 350px;
+        min-width:370px;
+        max-width: 350px;
     }
 
     .service div{
-        width: 350px;
+        min-width:370px;
+        max-width: 350px;
     }
 
     .specialOffer{
@@ -804,7 +817,8 @@ footer .footerRights a{
     .signUp{
         margin-top: 0px;
         padding: 0;
-        width: 350px;
+        min-width:370px;
+        max-width: 350px;
         overflow: hidden;
     }
 
@@ -815,7 +829,8 @@ footer .footerRights a{
     }
 
     .signUp button{
-        width: 150px;
+        min-width:370px;
+        max-width: 150px;
         font-size: 16px;
     }
 
@@ -823,6 +838,7 @@ footer .footerRights a{
         display: flex;
         flex-direction: column;
         align-items: center;
+        min-width:370px;
         max-width: 420px;
     }
 
@@ -837,7 +853,8 @@ footer .footerRights a{
 
     .hotAndCold{
         margin: 0;
-        width: 100%;
+        min-width:370px;
+        max-width: 100%;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -850,7 +867,8 @@ footer .footerRights a{
         display: flex;
         align-items: center;
         margin: 0px auto;
-        width: 90% !important;
+        min-width:370px;
+        max-width: 90% !important;
     }
     
     .hotInner .gray{
@@ -858,7 +876,8 @@ footer .footerRights a{
     }
 
     .hotInner .pricingImg img{
-        width: 100px;
+        min-width:370px;
+        max-width: 100px;
         height: 100px;
     }
 
@@ -868,18 +887,21 @@ footer .footerRights a{
         margin: 0px auto;
         flex-wrap: wrap;
         height: 1200px;
-        width: 380px ;
+        min-width:370px;
+        max-width: 380px ;
     }
 
     .smallBreak,
     .smallBreak img{
-        width: inherit !important;
+        min-width:370px;
+        max-width: inherit !important;
     }
 
     .bookYourTable{
         box-sizing: border-box;
         padding: 20px 10px;
-        width: 100% !important;
+        min-width:370px;
+        max-width: 100% !important;
         background-color: rgb(35, 14, 10);
     }
 
@@ -941,13 +963,15 @@ footer .footerRights a{
     }
 
     :is(.footerTwo, .footerThree, .footerFour){
-        width: 90% !important;    
+        min-width:370px;
+        max-width: 90% !important;    
         margin-top: -150px;
     }
 
     .footerOne{
         margin-top: -70px;
-        width: 90% !important;
+        min-width:370px;
+        max-width: 90% !important;
     }
 
     .footerOne p{
@@ -965,7 +989,8 @@ footer .footerRights a{
     }
 
     .footerFour .signUp{
-        width: 100%;
+        min-width:370px;
+        max-width: 100%;
     }
 
     hr{
